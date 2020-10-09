@@ -71,23 +71,26 @@
                         <RowDefinition Height="35"/>
                     </Grid.RowDefinitions>
 
+
+                    <!-- TODO: padding; BetterSave™ -->
+
                     <Grid x:Name="SecondGrid" Grid.Row="0">
                         <Menu Foreground="{DynamicResource MaterialDesignBody}">
-                            <MenuItem Height="31" Header="_File" Padding="12,0,0,0" MinWidth="50">
-                                <MenuItem Header="_Open beatmap" Click="OpenBeatmap" Icon="{materialDesign:PackIcon Folder}"
-                                          ToolTip="Select the current beatmap with File Explorer."/>
-                                <MenuItem Header="_Open current beatmap" Click="OpenGetCurrentBeatmap" Icon="{materialDesign:PackIcon RestoreFromTrash}"
-                                          ToolTip="Set the current beatmap to the selected beatmap in your osu! client."/>
-                                <MenuItem Header="_Generate backup" Click="SaveBackup" Icon="{materialDesign:PackIcon Backup}"
-                                          ToolTip="Save a backup of the current beatmap to the backups folder."/>
-                                <MenuItem Header="_Load backup" Click="LoadBackup" Icon="{materialDesign:PackIcon BackupRestore}"
-                                          ToolTip="Load a backup from the backups folder into the current beatmap."/>
-                                <MenuItem Header="_BetterSave™ current beatmap" Click="CoolSave" Icon="{materialDesign:PackIcon ContentSave}"
-                                          ToolTip="Save the beatmap which is currently open in your osu! editor. BetterSave™ saves the beatmap just like the vanilla editor, but decimal values get rounded instead of truncated."/>
+                            <MenuItem Height="31" Header="_Файл" Padding="12,0,0,0" MinWidth="50">
+                                <MenuItem Header="_Открыть карту" Click="OpenBeatmap" Icon="{materialDesign:PackIcon Folder}"
+                                          ToolTip="Выберите карту с помощью Проводника файлов."/>
+                                <MenuItem Header="_Открыть текущую карту" Click="OpenGetCurrentBeatmap" Icon="{materialDesign:PackIcon RestoreFromTrash}"
+                                          ToolTip="Установите текущую карту, которая выбранна у вас в osu! клиенте."/>
+                                <MenuItem Header="_Создать резервную копию" Click="SaveBackup" Icon="{materialDesign:PackIcon Backup}"
+                                          ToolTip="Сохраните резервную копию текущей карты в папку резервные копии."/>
+                                <MenuItem Header="_Загрузить резервное копирование" Click="LoadBackup" Icon="{materialDesign:PackIcon BackupRestore}"
+                                          ToolTip="Загрузите резервную копию карты из папки с резервными копиями."/>
+                                <MenuItem Header="_BetterSave™ карты" Click="CoolSave" Icon="{materialDesign:PackIcon ContentSave}"
+                                          ToolTip="Сохраните карту, которая в данный момент открыта в вашем osu! редакторе. BetterSave™ сохраняет карту как обычный редактор, но десятичные значения округляются, а не усекаются."/>
                             </MenuItem>
-                            <MenuItem x:Name="ToolsMenu" Height="31" Header="_Tools" Padding="12,0,0,0" MinWidth="65">
+                            <MenuItem x:Name="ToolsMenu" Height="31" Header="_Инструменты" Padding="12,0,0,0" MinWidth="65">
                             </MenuItem>
-                            <MenuItem Height="31" Header="_Options" Padding="12,0,0,0" MinWidth="80">
+                            <MenuItem Height="31" Header="_Настройки" Padding="12,0,0,0" MinWidth="80">
                                 <MenuItem Header="_Get started" Click="ViewSelectMenuItemOnClick" Icon="{materialDesign:PackIcon ArrowRight}"
                                           ToolTip="Open the Get Started page."/>
                                 <MenuItem Header="_Preferences" Click="ViewSelectMenuItemOnClick" Icon="{materialDesign:PackIcon Settings}"
@@ -97,7 +100,7 @@
                                 <MenuItem Header="_Open Mapping Tools folder" Click="OpenConfig" Icon="{materialDesign:PackIcon FolderOpen}"
                                           ToolTip="Open the Mapping Tools folder."/>
                             </MenuItem>
-                            <MenuItem Height="31" Header="_About" Padding="12,0,0,0" MinWidth="67">
+                            <MenuItem Height="31" Header="О программе" Padding="12,0,0,0" MinWidth="67">
                                 <MenuItem Header="_Website" Click="OpenWebsite" Icon="{materialDesign:PackIcon OpenInBrowser}"
                                           ToolTip="Open the official Mapping Tools website in your browser."/>
                                 <MenuItem Header="_Github" Click="OpenGitHub" Icon="{materialDesign:PackIcon GithubCircle}"
